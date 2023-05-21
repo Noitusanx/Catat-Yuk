@@ -86,11 +86,10 @@
         android:contentDescription="@string/app_name"
         android:elevation="0dp"
         android:padding="@dimen/_6sdp"
-        android:src="@drawable/ic_add_note"
+        android:src="@drawable/image_notes_app"
         android:translationZ="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:tint="@color/black"
         />
 
 
