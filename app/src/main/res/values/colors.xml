@@ -17,4 +17,5 @@
     <color name="text_empty_color">#6B6B6B</color>
     <color name="icon_color">#3B3B3B</color>
     <color name="hint_color">#7F7F81</color>
+    <color name="stroke_color">#808080</color>
 </resources>

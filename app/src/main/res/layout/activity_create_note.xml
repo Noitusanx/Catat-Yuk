@@ -32,8 +32,7 @@
                 android:padding="@dimen/_3sdp"
                 android:src="@drawable/ic_back"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:tint="@color/icon_color" />
+                app:layout_constraintTop_toTopOf="parent"/>
 
             <ImageView
                 android:id="@+id/imageSave"
@@ -46,8 +45,7 @@
                 android:src="@drawable/ic_save"
                 app:layout_constraintBottom_toBottomOf="@id/imageBack"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@id/imageBack"
-                app:tint="@color/icon_color" />
+                app:layout_constraintTop_toTopOf="@id/imageBack"/>
 
             <EditText
                 android:id="@+id/inputJudulCatatan"
