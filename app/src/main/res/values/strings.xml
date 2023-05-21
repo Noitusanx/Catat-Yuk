@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Catat Yuk</string>
+    <string name="search_name">Cari Catatan</string>
+    <string name="content_notes">Catat Sesuatu...</string>
+    <string name="pilih_warna">Pilih Warna</string>
+    <string name="hapus_catatan">Hapus Catatan</string>
+    <string name="apakah_anda_yakin_ingin_menghapus_catatan_ini">Apakah Anda yakin ingin menghapus catatan ini?</string>
+    <string name="hapus">Hapus</string>
+    <string name="batal">Batal</string>
+</resources>

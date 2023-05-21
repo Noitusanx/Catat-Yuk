@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.CreateNoteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/_10sdp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="-5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+
+            <ImageView
+                android:id="@+id/imageBack"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/border_icon"
+                android:contentDescription="@string/app_name"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/icon_color" />
+
+            <ImageView
+                android:id="@+id/imageSave"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:background="@drawable/border_icon"
+                android:contentDescription="@string/app_name"
+                android:padding="5dp"
+                android:src="@drawable/ic_save"
+                app:layout_constraintBottom_toBottomOf="@id/imageBack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imageBack"
+                app:tint="@color/icon_color" />
+
+            <EditText
+                android:id="@+id/inputJudulCatatan"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="68dp"
+                android:background="@null"
+                android:fontFamily="@font/nunito"
+                android:hint="Judul"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:paddingLeft="@dimen/_10sdp"
+                android:textColor="@color/icon_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/_28ssp"
+                app:layout_constraintTop_toTopOf="@id/imageBack"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/tanggal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:fontFamily="@font/nunito"
+                android:includeFontPadding="false"
+                android:textColor="@color/search_color"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/inputJudulCatatan"
+                app:layout_constraintStart_toStartOf="@id/inputJudulCatatan"
+                app:layout_constraintTop_toBottomOf="@id/inputJudulCatatan" />
+
+            <EditText
+                android:id="@+id/inputTextCatatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@null"
+                android:fontFamily="@font/nunito"
+                android:gravity="top"
+                android:hint="@string/content_notes"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="textMultiLine"
+                android:minHeight="@dimen/_100sdp"
+                android:textColor="@color/icon_color"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/_20ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/inputJudulCatatan"
+                app:layout_constraintVertical_bias="1.0"
+                tools:layout_editor_absoluteX="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <include layout="@layout/layout_color"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

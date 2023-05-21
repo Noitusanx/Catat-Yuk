@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutHapusCatatanContainer"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/background_delete">
+
+    <ImageView
+        android:id="@+id/imageHapusCatatan"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:fontFamily="@font/nunito_bold"
+        android:includeFontPadding="false"
+        android:text="@string/hapus_catatan"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@id/imageHapusCatatan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageHapusCatatan"
+        app:layout_constraintTop_toTopOf="@id/imageHapusCatatan"/>
+
+    <TextView
+        android:id="@+id/pesanHapusCatatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:fontFamily="@font/nunito"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:text="@string/apakah_anda_yakin_ingin_menghapus_catatan_ini"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintTop_toBottomOf="@id/imageHapusCatatan"/>
+
+    <TextView
+        android:id="@+id/textHapusCatatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:fontFamily="@font/nunito_bold"
+        android:includeFontPadding="false"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/hapus"
+        android:textColor="@color/red_button"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pesanHapusCatatan"/>
+
+    <TextView
+        android:id="@+id/textBatal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:fontFamily="@font/nunito_bold"
+        android:includeFontPadding="false"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/batal"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textHapusCatatan"
+        app:layout_constraintTop_toBottomOf="@id/pesanHapusCatatan"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
